@@ -1,0 +1,21 @@
+<P><STRONG><SPAN style="TEXT-DECORATION: underline" _mce_style="text-decoration: underline;">Besonderheiten bei den Versand-Servern Sanicare Bad Laer</SPAN></STRONG></P>
+<P>DBS13 Aliva und DBS14 Medicaria und DBS15 Versandserver</P>
+<P>Start der Dauermedikation wurde aus PRO_J_N.REX entfernt</P>
+<P>und l&auml;uft nun im Runner vor dem Nachtjob</P>
+<P><IMG alt="Sanicare Runner" target="LinkAttach:1131"  width=304 height=96 _mce_target="LinkAttach:1131" ></P>
+<P><SPAN style="TEXT-DECORATION: underline" _mce_style="text-decoration: underline;">der DBS15 hat eine weitere Besonderheit, welche auf Wunsch der Sanicare eingerichtet wurde:</SPAN></P>
+<P>nach Beendigung der Pro_J_NA.REX werden hier die Dauerl&auml;ufer gestartet.</P>
+<P>Dieser Eintrag ist in der NACHT.REX hinterlegt mit dem Aufruf</P>
+<P>'call c:\prokas2\win32\tol\appstart.bat'</P>
+<P><IMG alt=NACHTREX target="LinkAttach:1131"  width=336 height=250 _mce_target="LinkAttach:1131" ></P>
+<P><STRONG>Kontrolle interne Sicherung und SETDAUM auf den Sanicare Servern</STRONG></P>
+<P>unter C:\prokas2\msg\ findet man die pk_sich.log, diese Datei &ouml;ffnen und ganz ans Ende gehen</P>
+<P>wenn die interne V Sicherung korrekt gelaufen ist,</P>
+<P><IMG alt=pk_sich target="LinkAttach:1131"  width=397 height=189 _mce_target="LinkAttach:1131" ></P>
+<P>dann&nbsp;ist dieser Eintrag ersichtlich, sollte dem nicht der Fall sein, muss die THL informiert werden.</P>
+<P><STRONG>Pr&uuml;fung von SETDAUM</STRONG></P>
+<P>in c:\prokas2\msg\setdaum.1&nbsp;anschauen,&nbsp;Datum muss der Abend davor sein, da&nbsp;der Job um 22:00 startet</P>
+<P><IMG alt=setdaum target="LinkAttach:1131"  width=240 height=185 _mce_target="LinkAttach:1131" ></P>
+<P>Datei &ouml;ffen und wieder bis ans Ende der Datei pr&uuml;fen, ist er gelaufen und wenn ja wie lange</P>
+<P><IMG alt=setdaum target="LinkAttach:1131"  _mce_target="LinkAttach:1131" ></P>
+<P>Der SETDAUM muss zwingend bis 0:00 fertig sein, da hier der eigentliche Nachtjob startet</P>

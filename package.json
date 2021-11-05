@@ -11,6 +11,13 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "got": "^9.6.0",
+    "htmlencode": "0.0.4",
+    "json2csv": "^5.0.6",
+    "node-html-parser": "^5.1.0",
+    "pretty-data": "^0.40.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
     "shelljs": "^0.8.2"
   }
 }
